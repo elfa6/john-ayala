@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <title>John Ayala portfolio</title>
+</head>
+<body class="home-page">
+    <header id="navbar">
+        <li class="nav_link"><a href="#home" class="logo">JOHN <span class="red">AYALA</span></a></li>
+        <img src="icons8-hamburger-menu-50.png" alt="Menu" class="hamburger-menu" id="hamburger-menu">
+        <nav class="navbar">
+            <ul class="nav_links" id="nav-links">
+                <li><a href="#mywork">MY WORK</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <a href="#" class="cta"><button class="red_btn">WORK WITH ME</button></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="homepage" id="home">
+        <h1 data-title="HUMAN-FIRST DESIGN, ALWAYS" class="home-heading">HUMAN-FIRST DESIGN, ALWAYS</h1>
+        <div class="ht">
+            <p class="hero-text">HI, I AM JOHN AYALA, <span class="red">UX DESIGNER.</span> Shaping the future of the web through innovative
+                experiences. Welcome to my curated portfolio – explore and enjoy!</p>
+        </div>
+    </section>
+    <section class="mywork" id="mywork" data-aos="fade-up">
+        <h2 class="s2-heading">MY WORK</h2>
+        <div class="image-grid" data-aos="fade-up">
+            <div class="tile">
+                <a onclick="redirectToDetails('real-eats.html')"><img src="Portfolio Tile.png" alt="reel eats banner" class="tiles"></a>
+            </div>
+            <div class="tile tile-2">
+                <a onclick="redirectToDetails('bookmooch.html')"><img src="Portfolio Tile (1).png" alt="bookmooch banner" class="tiles"></a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <img src="Untitled design (11).png" alt="my photo" class="photo" data-aos="fade-up">
+        <div class="about-me">
+            <h2 class="about-heading">GET TO KNOW ME</h2>
+            <p class="about-para" data-aos="fade-up">I am a UX designer from Texas and am passionate about creating intuitive and engaging user experiences. My journey into UX design began with an immersive educational experience that sparked my enthusiasm for blending creativity with functionality.</p>
+            <p class="about-para" data-aos="fade-up">I aim to design seamless, enjoyable experiences by understanding users' needs and behaviors. I value simplicity and aesthetics, focusing on making designs visually appealing, functional, and accessible through wireframes, prototypes, and user testing.</p>
+            <p class="about-para" data-aos="fade-up">Outside of design, I explore tech trends, experiment with new tools, and enjoy Texas culture. I'm excited to bring my unique perspective and skills to new challenges in UX design.</p>
+            <button class="resume downloadBtn" data-aos="fade-up" id="downloadBtn">DOWNLOAD MY RESUME</button>
+            <a id="downloadLink" href="Resume (1).png" download="Resume (1).png" style="display: none;"></a>
+        </div>
+    </section>
+    <div id="contactFormPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Me</h2>
+                <div class="form-text">
+                    <h2>Let's Work Together!</h2>
+                    <p>If you have any questions or comments, please contact me via email or phone, or send me a message using the contact form.</p>
+                    <h5>Emial:</h5>
+                    <p>John16ayala@gmail.com</p>
+                    <h5>Phone Number:</h5>
+                    <p>(915)801-4463</p>
+                    <div class="icon-wrapper">
+                        <a href="https://www.linkedin.com/in/johnayaladesign/" target="_blank"><img src="icons8-linkedin-50.png" alt="linkedin icon"></a>
+                        <a href="mailto:john16ayala@gmail.com" target="_blank">
+                            <img src="icons8-email-50.png" alt="Email Icon">
+                        </a>                    
+                    </div>
+                </div>
+                <div class="form-elements">
+                    <form action="https://formspree.io/f/xkgwvnyr" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="number">Phone Number:</label>
+                        <input type="number" id="number" name="phone number" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        
+                        <button type="submit" class="red_btn2">SUBMIT</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-1">
+            <p class="footer-text">YOUR <span class="red">DIGITAL VISION</span> BROUGHT TO <span class="red">LIFE</span></p>
+            <a href="#" class="cta"><button class="red_btn">WORK WITH ME</button></a>
+        </div>
+        <div class="footer-2">
+            <h4 class="contact-info">CONTACT INFO</h4>
+            <h5 class="email">Email:</h5>
+            <p class="email-address">John16ayala@gmail.com</p>
+            <a href="https://www.linkedin.com/in/johnayaladesign/" target="_blank"><li class="linkedin"></li><img src="icons8-linkedin-50.png" alt="linkdedin logo"></li></a>
+        </div>
+        <p class="copyright">©  JOHN AYALA 2024 ALL RIGHTS RESERVED</p>
+    </footer>   
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200, 
+        });
+    </script>
+      
+</body>
+
+<script src="script.js"></script>
+<script>
+  if (window.location.pathname !== '/') {
+    window.location.href = '/';
+  }
+</script>
+
+</html>
